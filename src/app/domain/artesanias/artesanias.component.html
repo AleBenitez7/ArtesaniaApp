@@ -55,7 +55,7 @@
 
 <p-confirmDialog header="DELETE ARTESANIA"  icon="pi pi-exclamation-triangle" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}"></p-confirmDialog>
 
-<p-dialog header="Error" [(visible)]="display" icon="pi pi-exclamation-triangle">
+<p-dialog *ngIf (header="Error") [(visible)]="display" icon="pi pi-exclamation-triangle">
     <p>No se ha podido eliminar</p>
 
     <ng-template pTemplate="footer">

@@ -34,7 +34,7 @@ import { MenuModule } from "src/app/components/menu/menu.module";
       InputTextModule,
       HeaderModule,
       CardModule,
-      MenuModule
+      MenuModule,
     ],
     providers:[
       ArtesaniasService,

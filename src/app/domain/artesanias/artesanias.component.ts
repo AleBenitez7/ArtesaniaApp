@@ -20,7 +20,7 @@ export class ArtesaniasComponent implements OnInit {
 
   constructor(
     private service: ArtesaniasService,
-    private confirmationService: ConfirmationService,
+    private confirmationService: ConfirmationService
   ) { }
 
   ngOnInit(): void {

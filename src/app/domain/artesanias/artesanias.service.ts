@@ -4,8 +4,9 @@ import { Artesania } from "./artesanias.model";
 @Injectable({
     providedIn: 'root'
 })
+
 export class ArtesaniasService{
-    url="http://localhost:8080/artesanias";
+    url="http://localhost:8080/artesanias/";
     
     constructor(
         private http: HttpClient
