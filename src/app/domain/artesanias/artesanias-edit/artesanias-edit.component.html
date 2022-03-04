@@ -1,0 +1,47 @@
+<p-card>
+    <ng-template pTemplate="header">
+        <app-header  [isEdicion]="true" [titulo]="titulo" [ruta]="ruta"></app-header>
+    </ng-template>
+    <div class="p-fluid p-formgrid p-grid">
+        <div class="p-col-12 p-md-6">
+            <div class="card">
+                <div class="p-col-12 p-md-6">
+                        <span style="width: 30px;">
+                            <label for="lblId">ID</label>
+                            <input type="number" [disabled]="true" id="lblId" pInputText [(ngModel)]="artesania.id"> 
+                            <!-- <p-inputNumber [disabled]="true" id="lblId" [(ngModel)]="artesania.id"> </p-inputNumber> -->
+                        </span>
+                </div>
+                
+                <div class="p-field">
+                    <span>
+                        <label for="lblNombre">Nombre</label>
+                        <input type="text" id="lblNombre" pInputText [(ngModel)]="artesania.nombre"> 
+                        
+                    </span>
+                </div>
+                <div class="p-field">
+                    <span>
+                        <label for="lblColor">Color</label>
+                        <input type="text" id="lblColor" pInputText [(ngModel)]="artesania.color"> 
+                        
+                    </span>
+                </div>
+
+                <div class="p-field">
+                    <span>
+                        <label for="lblPrecio">Precio</label>
+                        <!-- <input type="number" id="lblPrecio" pInputText [(ngModel)]="artesania.precio">  -->
+                        <input type="text" id="lblPrecio" pInputText [(ngModel)]="artesania.precio"> 
+                    </span>
+                </div>
+                <div class="p-field" style="margin-top: 10px;">
+                    <button pButton pRipple type="button" (click)="isModoEdicion ? update() : add()" styleClass="p-button-success p-mr-2 p-mb-2"  label="Guardar" ></button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</p-card>
+
