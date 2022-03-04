@@ -17,6 +17,7 @@ import { MessagesModule } from "primeng/messages";
 import { MessageModule } from "primeng/message";
 import { MenuModule } from "src/app/components/menu/menu.module";
 import { ArtesaniasEditComponent } from './artesanias-edit/artesanias-edit.component';
+
 @NgModule({
     declarations: [
       ArtesaniasComponent,

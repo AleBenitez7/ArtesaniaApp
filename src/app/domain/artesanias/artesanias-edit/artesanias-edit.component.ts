@@ -13,10 +13,10 @@ export class ArtesaniasEditComponent implements OnInit {
 
   artesania = new Artesania();
   isModoEdicion:boolean = false;
-  ruta="/artesanias";
+  ruta="/artesanias/";
   titulo:string;
-  displayDialog:boolean;
-  submitted:boolean;
+  // displayDialog:boolean;
+  // submitted:boolean;
 
   constructor(
     private router: Router,
@@ -57,11 +57,11 @@ export class ArtesaniasEditComponent implements OnInit {
   add(){
     this.service.add(this.artesania)
     .subscribe(
-      (data) => {
+      () => {
         this.returnToList();
       },
       (error) => {
-        console.error(error)
+        console.error("Error al anhadir"+error)
       }
     )
   }
@@ -72,8 +72,10 @@ export class ArtesaniasEditComponent implements OnInit {
         () => {
           this.returnToList();
         },
-        (error) => {
-          console.error("Error al actualizar " + error);
+        (erro) => {
+          console.error("Error al actualizar" +erro);
+          console.log('eror');
+          
         }
       )
   }
