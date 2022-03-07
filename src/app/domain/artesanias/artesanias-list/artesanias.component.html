@@ -11,14 +11,14 @@
                     ID
                     <p-sortIcon field="id"></p-sortIcon>
                 </th>
-                <th pSortableColumn="tipo">
-                    Tipo
-                    <p-sortIcon field="tipo"></p-sortIcon>
-                </th>
                 
                 <th pSortableColumn="nombre">
                     Nombre
                     <p-sortIcon field="nombre"></p-sortIcon>
+                </th>
+                <th pSortableColumn="tipo">
+                    Tipo
+                    <p-sortIcon field="tipo"></p-sortIcon>
                 </th>
 
                 <th pSortableColumn="color">
@@ -38,8 +38,8 @@
         <ng-template pTemplate="body" let-artesania | async>
             <tr>
                 <td>{{artesania.id}}</td>
-                <td>{{artesania.tipo}}</td>
                 <td>{{artesania.nombre}}</td>
+                <td>{{artesania.tipo}}</td>
                 <td>{{artesania.color}}</td>
                 <td>{{artesania.precio}}</td>
                 <td>
